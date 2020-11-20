@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags and Title -->
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>This is contact.html</title>
+
+		<!-- Reset style defaults -->
+		<link rel="stylesheet" href="reset.css" />
+
+		<!-- import Bootstrap's stylesheet  -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Custom stylesheet for these pages -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Mark Shelgren</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item active">
+						<a class="nav-link" href="./contact.html"
+							>Contact <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./portfolio.html">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">About</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+		<!-- Begin Main container -->
+		<main class="container-fluid">
+			<!-- Begin Section Mark's Contacts  -->
+			<section class="mb-4">
+				<!--Section heading-->
+				<h3 class="h2-responsive font-weight-bold text-left my-4">
+					Mark's Contact Information
+				</h3>
+				<!--Section description-->
+				<ul>
+					<li>
+						<strong>Updated Portfolio: </strong
+						><a href="https://markshelgren.github.io/updatedPortfolio/"
+							>Marks updatedPortfolio in GitHub</a
+						>
+					</li>
+					<li>
+						<strong>Github Profile: </strong
+						><a href="https://github.com/markshelgren">Mark Shelgren</a>
+					</li>
+
+					<li>
+						<strong>Resume: </strong>
+						<a href="./Mark C. Shelgren_Resume.pdf">Mark Shelgren</a>
+					</li>
+					<li>
+						<strong>Linked In: </strong
+						><a href="https://www.linkedin.com/in/markshelgren"
+							>Mark Shelgren</a
+						>
+					</li>
+				</ul>
+			</section>
+			<!-- End Section Contact Mark -->
+
+			<!-- Begin Section Contact Mark -->
+			<section class="mb-4">
+				<!--Section heading-->
+				<h2 class="h1-responsive font-weight-bold text-left my-4">
+					Contact Mark Via Email
+				</h2>
+				<!--Section description-->
+
+				<!-- Begin Grid Row-->
+				<section class="row">
+					<!-- Begin Form -->
+					<section class="col-xs-12 col-sm-8 col-md-8 col-lg-8 mb-md-0 mb-5">
+						<form
+							id="contact-form"
+							name="contact-form"
+							action="mail.php"
+							method="POST"
+						>
+							<!-- End Grid Row-->
+							<!-- Begin Grid Row-->
+							<section class="row">
+								<section class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+									<section class="md-form mb-0">
+										<input
+											type="text"
+											id="name"
+											name="name"
+											class="form-control"
+										/>
+										<label for="name" class="">Your name</label>
+									</section>
+								</section>
+							</section>
+							<!-- End Grid Row-->
+							<!-- Begin Grid Row-->
+							<section class="row">
+								<section class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+									<section class="md-form mb-0">
+										<input
+											type="text"
+											id="email"
+											name="email"
+											class="form-control"
+										/>
+										<label for="email" class="">Your email</label>
+									</section>
+								</section>
+							</section>
+							<!-- End Grid Row-->
+							<!-- Begin Grid Row-->
+							<section class="row">
+								<section class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+									<section class="md-form mb-0">
+										<input
+											type="text"
+											id="subject"
+											name="subject"
+											class="form-control"
+										/>
+										<label for="subject" class="">Subject</label>
+									</section>
+								</section>
+							</section>
+							<!-- End Grid Row-->
+							<!-- Begin Grid Row-->
+							<section class="row">
+								<section class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+									<section class="md-form">
+										<textarea
+											id="message"
+											name="message"
+											rows="2"
+											class="form-control md-textarea"
+										></textarea>
+										<label for="message">Your message</label>
+									</section>
+								</section>
+							</section>
+							<!-- End Grid Row-->
+						</form>
+						<!-- End Form -->
+
+						<section class="text-center text-md-left">
+							<a
+								class="btn btn-primary"
+								onclick="document.getElementById('contact-form').submit();"
+								>Send</a
+							>
+						</section>
+						<section class="status"></section>
+					</section>
+					<!--Grid column-->
+				</section>
+			</section>
+			<!-- End Section Contact Mark -->
+		</main>
+
+		<!-- End of Main Container  -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS then page specific JS-->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
